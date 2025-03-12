@@ -28,9 +28,10 @@ class CodaPrioritaria:
     def __len__(self):
         return len(self._lista)
 
+#uso la mia classe per creare una coda prioritaria
 #c = CodaPrioritaria()
-
-c = queue.PriorityQueue() #uso la classe implementata da Python e uso i suoi metodi
+#uso la classe implementata da Python e uso i suoi metodi
+c = queue.PriorityQueue()
 
 c.put((3, "ciao"))
 c.put((1, "hello"))
@@ -40,7 +41,7 @@ print(c.get()[1]) #stampa in ordine di priorità
 print(c.get()[1])
 print(c.get()[1])
 
-#controllo quanto tempo impiega il mio metodo #questo ci mette taaaaaaanto di più
+#controllo quanto tempo impiega il mio meotodo #questo ci mette taaaaaaanto di più
 c1 = CodaPrioritaria()
 tic = datetime.datetime.now()
 for i in range(10000):
